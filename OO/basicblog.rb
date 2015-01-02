@@ -28,6 +28,5 @@ end
 
 b = Blog.new(@title, @date, @text)
 b2 = Blog.new(@title, @date, @text)
-
 b.front
 b2.front
