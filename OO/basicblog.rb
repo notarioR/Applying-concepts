@@ -3,7 +3,7 @@ class Blog
 	def initialize(title, date, text)
 		puts "Title for post"
 		@title = gets.chomp
-		puts "Date for post"
+		puts "Date for post, format dd-mm-yyyy"
 		@date = gets.chomp
 		puts "Text for post"
 		@text = gets.chomp
@@ -13,7 +13,6 @@ class Blog
 
 	def front	
 		puts "  "
-		puts "Front Page Blog"
 		puts "---------------------"
 		if @sponsor == "s" 
 			puts "|" "  ++  #{@title}   ++  "
@@ -28,7 +27,7 @@ class Blog
 end
 
 b = Blog.new(@title, @date, @text)
-# b2 = Blog.new(@title, @date, @text)
+b2 = Blog.new(@title, @date, @text)
 
 b.front
-# b2.front
+b2.front
